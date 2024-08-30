@@ -113,6 +113,8 @@ main {
 
 .right_middle .row .col input:focus {
   outline: 1px solid blue;
+  box-shadow: 0px 1px 1px 1px #111;
+
 }
 
 .right_middle .row .col input:invalid {
@@ -138,6 +140,21 @@ main {
   outline: none;
 }
 
+.third_row .col {
+  position: relative;
+}
+
+.invalid_password {
+  display: none;
+}
+
+.invalid_password.active {
+display: inline-block;
+  font-size: 14px;
+  color: red;
+  position: absolute;
+  bottom: -1rem;
+}
 .invalid {
     outline: 1px solid red;
 }
